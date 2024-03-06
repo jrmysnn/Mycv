@@ -3,81 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Car Shop Name</title>
+  <title>Car Details</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;
-      background-color: #f0f0f0;
     }
     
-    .header {
-      text-align: center;
+    .car-details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       margin-bottom: 20px;
     }
     
-    .h1 {
-      font-size: 2em;
-      color: #333;
+    .car-image {
+      width: 50%;
+      padding: 10px;
+      box-sizing: border-box;
     }
     
-    .services, .contact {
-      margin-bottom: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      padding: 20px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    .car-info {
+      width: 50%;
+      padding: 10px;
+      box-sizing: border-box;
     }
     
-    .services h2, .contact h2 {
+    .car-title {
       font-size: 1.5em;
       margin-bottom: 10px;
-      color: #333;
     }
     
-    .services ul, .contact ul {
-      list-style: none;
-      padding: 0;
-    }
-    
-    .services li, .contact li {
-      margin-bottom: 5px;
-    }
-    
-    .contact ul li {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .contact ul li span:first-child {
+    .car-price {
       font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .buy-button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <header class="header">
-    <h1 class="h1">Your Car Shop Name</h1>
-  </header>
-  
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Oil Change</li>
-      <li>Tire Rotation</li>
-      <li>Brake Repair</li>
-      <li>Engine Diagnostics</li>
-      <li>And More!</li>
-    </ul>
-  </section>
-  
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <ul>
-      <li><span>Phone:</span> (555) 555-5555</li>
-      <li><span>Email:</span> info@yourcarshop.com</li>
-      <li><span>Address:</span> 123 Main Street, Anytown, CA 12345</li>
-    </ul>
-  </section>
+  <div class="car-details">
+    <img class="car-image" src="[Image of car]" alt="Car Image">
+    <div class="car-info">
+      <h2 class="car-title">2024 Toyota Camry</h2>
+      <p class="car-price">$28,000</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed leo metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      <button class="buy-button">Buy Now</button>
+    </div>
+  </div>
 </body>
 </html>
