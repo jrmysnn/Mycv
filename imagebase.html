@@ -9,6 +9,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;
+      background-color: #f0f0f0;
     }
     
     .header {
@@ -18,15 +19,21 @@
     
     .h1 {
       font-size: 2em;
+      color: #333;
     }
     
     .services, .contact {
       margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
     
     .services h2, .contact h2 {
       font-size: 1.5em;
       margin-bottom: 10px;
+      color: #333;
     }
     
     .services ul, .contact ul {
@@ -41,6 +48,10 @@
     .contact ul li {
       display: flex;
       justify-content: space-between;
+    }
+
+    .contact ul li span:first-child {
+      font-weight: bold;
     }
   </style>
 </head>
@@ -63,9 +74,9 @@
   <section class="contact">
     <h2>Contact Us</h2>
     <ul>
-      <li>Phone: (555) 555-5555</li>
-      <li>Email: info@yourcarshop.com</li>
-      <li>Address: 123 Main Street, Anytown, CA 12345</li>
+      <li><span>Phone:</span> (555) 555-5555</li>
+      <li><span>Email:</span> info@yourcarshop.com</li>
+      <li><span>Address:</span> 123 Main Street, Anytown, CA 12345</li>
     </ul>
   </section>
 </body>
