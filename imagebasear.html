@@ -1,6 +1,12 @@
 <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-
+<script>
+// Workaround for an AR.js bug (https://github.com/jeromeetienne/AR.js/issues/410)
+const sceneEl = document.querySelector('a-scene');
+sceneEl.addEventListener('loaded', () => {
+    sceneEl.camera = new THREE.PerspectiveCamera();
+});
+</script>
 <style>
   .arjs-loader {
     height: 100%;
