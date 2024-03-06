@@ -50,9 +50,13 @@
   </a-scene>
     <script>
     // Workaround for an AR.js bug (https://github.com/jeromeetienne/AR.js/issues/410)
-    const sceneEl = document.querySelector('a-scene');
+    const sceneEl = document.querySelector('a-nft');
     sceneEl.addEventListener('loaded', () => {
         sceneEl.camera = new THREE.PerspectiveCamera();
     });
+
+      var renderer = new THREE.WebGLRenderer({
+    logarithmicDepthBuffer: true
+  });
     </script>
 </body>
