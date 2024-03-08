@@ -28,7 +28,7 @@
             gltf-model="/mycv/wreckitralph/scene.gltf"
              rotation="0 0 0" position="150 50 0"
             scale="1 1 1"
-            gps-entity-place="latitude: 14.60803; longitude: 120.99203;"
+            gps-entity-place="latitude: 14.60803; longitude: 120.99203;" visible="false"
           />
     
         <a-camera gps-camera rotation-reader></a-camera>
@@ -38,6 +38,8 @@
 	<script>
     // Workaround for an AR.js bug (https://github.com/jeromeetienne/AR.js/issues/410)
     const sceneEl = document.querySelector('a-scene');
+
+	
     sceneEl.addEventListener('loaded', () => {
        // sceneEl.camera = new THREE.PerspectiveCamera();
     });
